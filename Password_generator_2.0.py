@@ -1,8 +1,4 @@
 # Hello! It's Godwin again. This is a slightly detailed verion of my password generator project.
-# The key diffence is that I've traded to ability to create multiple passwords at once for being able to specify how many uppercase or lowercase letters or symbols the password should include.
-# I thought having this feature would be nice for people who are required to meet specific requirements.
-# I imported shuffle because the password was coming out in a specific pattern depending on the numbers given in the preferences
-# for example, a preference of 3lowercases, 3uppercases, and 3symbols would come out as "ahbDPN&(!" and I felt like having a predictable pattern would defeat the purpose.
 # Hope you enjoy it!!
 
 
@@ -32,7 +28,7 @@ while 1:
             password      = password + password_set2
         for x in range (0, symbols_count):
             password_set3 = random.choice(symbols)
-            password = password + password_set3
+            password      = password + password_set3
         l = list(password)
         shuffle(l)
         password = ''.join(l)
